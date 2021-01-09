@@ -1,21 +1,16 @@
-import { useState } from 'react';
+import { useLocation } from 'react-router-dom';
 
 import { Wrapper, NavLink as Link } from './navbar.styles';
 
-import { routes, defaultPath } from '../../routes';
+import { routes } from '../../routes';
 
 const Navbar = () => {
-   const [selectedPath, setSelectedPath] = useState(defaultPath);
+   const location = useLocation();
 
    return (
       <Wrapper>
          {routes.map((route, i) => (
-            <Link
-               to={route.path}
-               key={`link-${i}`}
-               onClick={() => setSelectedPath(route.path)}
-               selected={selectedPath === route.path}
-            >
+            <Link to={route.path} key={`link-${i}`} selected={location.pathname === route.path}>
                {route.name}
             </Link>
          ))}
