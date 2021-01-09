@@ -1,6 +1,6 @@
 import AnimatedTabs from '../components/animated-tabs';
 import AnimatedRadioGrid from '../components/animated-radio-grid';
-import AnimatedSwitch from '../components/animated-switch/animated-switch.component';
+import AnimatedSwitch from '../components/animated-switch';
 
 export const routes = [
    {
