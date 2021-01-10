@@ -21,6 +21,9 @@ export const Wrapper = styled.div`
    width: 120px;
    cursor: pointer;
 
+   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+   -webkit-tap-highlight-color: transparent;
+
    justify-content: ${(props) => (props.active ? 'flex-end' : 'flex-start')};
 
    ${(props) =>

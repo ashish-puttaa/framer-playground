@@ -7,6 +7,9 @@ export const Wrapper = styled(motion.div)`
    border-radius: 10px;
    overflow: hidden;
    background-color: white;
+
+   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+   -webkit-tap-highlight-color: transparent;
 `;
 
 export const Button = styled(motion.span)`

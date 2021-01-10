@@ -33,6 +33,9 @@ export const Button = styled.span`
    user-select: none;
    cursor: pointer;
 
+   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+   -webkit-tap-highlight-color: transparent;
+
    transition: all 0.075s;
    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2);
 

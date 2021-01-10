@@ -7,7 +7,7 @@ import { routes, defaultPath } from './routes';
 
 const Wrapper = styled.div`
    display: grid;
-   grid-template-columns: minmax(280px, 20%) 80%;
+   grid-template-columns: minmax(max-content, 20%) auto;
    min-height: 100vh;
 `;
 

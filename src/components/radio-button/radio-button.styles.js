@@ -5,6 +5,9 @@ export const Wrapper = styled(motion.div)`
    cursor: pointer;
    width: 80px;
    height: 80px;
+
+   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+   -webkit-tap-highlight-color: transparent;
 `;
 
 export const Circle = styled(motion.div)`
